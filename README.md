@@ -33,20 +33,20 @@ The Receiver Operating Characteristic (ROC) curve analysis provides compelling e
 
 <img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/79cfb4c8-2344-4a20-b767-c02031776195" />
 
-**Cross-Modal Incongruity Analysis and Validation**<br>
-The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication. \<br>
+**Cross-Modal Incongruity Analysis and Validation**:<br>
+The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication.\<br>
 
-**Incongruity Score Analysis and Prediction Accuracy Distribution**
+**Incongruity Score Analysis and Prediction Accuracy Distribution**<br>
 <img width="975" height="314" alt="image" src="https://github.com/user-attachments/assets/e6a7da00-ad91-463b-8170-6acb6f527a86" />
-**Model Confidence Distribution for Sarcastic and Non-Sarcastic Classifications**
+**Model Confidence Distribution for Sarcastic and Non-Sarcastic Classifications**<br>
 <img width="975" height="484" alt="image" src="https://github.com/user-attachments/assets/1b46e6cc-73e2-45e9-9a8b-8f76b1dfc00a" />
-**Model Calibration assessment and Reliability Analysis**
+**Model Calibration assessment and Reliability Analysis**<br>
 <img width="975" height="779" alt="image" src="https://github.com/user-attachments/assets/26913435-17bb-4d41-964e-1052ed2ae8fe" />
-**Error Analysis of Challenging Cases and Feature Correlation Matrix**
+**Error Analysis of Challenging Cases and Feature Correlation Matrix**<br>
 <img width="975" height="503" alt="image" src="https://github.com/user-attachments/assets/b5158e91-b952-4704-b485-9970ca727462" />
-**Feature Attribution Analysis and Importance Distribution**
+**Feature Attribution Analysis and Importance Distribution**<br>
 <img width="975" height="779" alt="image" src="https://github.com/user-attachments/assets/c2238451-6a9c-4e5b-ae32-afb0370e4d4e" />
-**Token-Level Importance Analysis for Sarcasm Prediction with Text Highlighting**
+**Token-Level Importance Analysis for Sarcasm Prediction with Text Highlighting**<br>
 <img width="975" height="446" alt="image" src="https://github.com/user-attachments/assets/01fde011-3fdf-472d-841f-fd0ec591fd01" />
 
 
