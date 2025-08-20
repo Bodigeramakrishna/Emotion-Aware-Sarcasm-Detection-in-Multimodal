@@ -34,7 +34,7 @@ The Receiver Operating Characteristic (ROC) curve analysis provides compelling e
 <img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/79cfb4c8-2344-4a20-b767-c02031776195" />
 
 **Cross-Modal Incongruity Analysis and Validation**:<br>
-The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication.\<br>
+The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication.
 
 **Incongruity Score Analysis and Prediction Accuracy Distribution**<br>
 <img width="975" height="314" alt="image" src="https://github.com/user-attachments/assets/e6a7da00-ad91-463b-8170-6acb6f527a86" />
