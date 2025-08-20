@@ -24,16 +24,34 @@ The experimental evaluation employs two prominent multimodal sarcasm detection d
 <img width="974" height="354" alt="image" src="https://github.com/user-attachments/assets/9c690f21-b571-48b0-8afc-0b847cf2de5e" />
 **Training Methodology**
 The HCI-EASD model was implemented using the PyTorch deep learning framework, leveraging its dynamic computational graph capabilities for efficient multimodal processing. The model was trained on Kaggle's Tesla T4 GPU with 16GB memory, enabling efficient processing of multimodal batches while maintaining computational accessibility for reproducible research. The training environment utilized CUDA acceleration with automatic mixed precision training to optimize memory utilization and training speed. Batch sizes were dynamically adjusted based on sequence lengths and image resolutions to maximize GPU memory efficiency while ensuring stable gradient computation.
-
-
 # 4. Experimental Results and Analysis
 The HCI-EASD model demonstrates exceptional performance across all evaluation metrics, achieving robust classification accuracy that validates our architectural design Over all accuracy with 0.97 and F1 score as 0.97 illustrates model performing better in all directions.<br>
-<img width="742" height="571" alt="image" src="https://github.com/user-attachments/assets/73e31c57-7aae-4511-bedb-2286b0c2b6ba" />
+The Receiver Operating Characteristic (ROC) curve analysis provides compelling evidence of the model's discriminative power, with an Area under the Curve (AUC) of 0.991. This exceptional AUC score indicates that the model can distinguish between sarcastic and non-sarcastic content with remarkable accuracy across all decision thresholds.<br>
+**Classification Performance Metrics and ROC Analysis**<br>
 
-<img width="788" height="611" alt="image" src="https://github.com/user-attachments/assets/300db5ae-750c-421f-95c9-099d519f6aac" />
-<img width="736" height="611" alt="image" src="https://github.com/user-attachments/assets/e46f7daa-4e1d-4741-a77e-0fa0bab81f5e" />
-<img width="975" height="461" alt="image" src="https://github.com/user-attachments/assets/d46c387f-d7ea-4e19-a9e9-004df1ee127f" />
+<img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/79cfb4c8-2344-4a20-b767-c02031776195" />
+**Cross-Modal Incongruity Analysis and Validation**<br>
+The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication. \<br>
+**Incongruity Score Analysis and Prediction Accuracy Distribution**
+<img width="975" height="314" alt="image" src="https://github.com/user-attachments/assets/e6a7da00-ad91-463b-8170-6acb6f527a86" />
+**Model Confidence Distribution for Sarcastic and Non-Sarcastic Classifications**
+<img width="975" height="484" alt="image" src="https://github.com/user-attachments/assets/1b46e6cc-73e2-45e9-9a8b-8f76b1dfc00a" />
+**Model Calibration assessment and Reliability Analysis**
+<img width="975" height="779" alt="image" src="https://github.com/user-attachments/assets/26913435-17bb-4d41-964e-1052ed2ae8fe" />
+**Error Analysis of Challenging Cases and Feature Correlation Matrix**
+<img width="975" height="503" alt="image" src="https://github.com/user-attachments/assets/b5158e91-b952-4704-b485-9970ca727462" />
+**Feature Attribution Analysis and Importance Distribution**
+<img width="975" height="779" alt="image" src="https://github.com/user-attachments/assets/c2238451-6a9c-4e5b-ae32-afb0370e4d4e" />
+**Token-Level Importance Analysis for Sarcasm Prediction with Text Highlighting**
+<img width="975" height="446" alt="image" src="https://github.com/user-attachments/assets/01fde011-3fdf-472d-841f-fd0ec591fd01" />
 
+
+
+
+
+
+
+ 
 
 
 
@@ -55,8 +73,4 @@ The HCI-EASD model demonstrates exceptional performance across all evaluation me
 | Tomás et al. (2023)     | Generative Adversarial Networks (GANs)     | Mixed Media Dataset              | 90.5     | 89.8   | 90.0   | 89.9   |
 | **T5 (Text-to-Text Transfer Transformer) model**      | **Text to Text transfer Transformer model**| **Twitter(multi class) sarcasm** | **96**   | **93** | **88** | **91** |
 ## 5. Conclusion
-This paper introduces a novel T5-based approach for detecting sarcasm, irony, and humor in social media text. Leveraging T5's adaptability for multi-class sarcasm classification, our model effectively captures complex linguistic features in these expressions. Experiments demonstrate state-of-the-art performance with 96% accuracy.
-
-Results show T5's superiority in handling challenging aspects like cultural context, overstatement, and idioms - areas where traditional BERT models struggle. Our balanced, diverse dataset enables robust generalization across sarcasm types.
-
-This work advances sarcasm detection and establishes a foundation for applying transfer learning to more complex humor and irony tasks.
+HCI-EASD, a novel hierarchical architecture for multimodal sarcasm detection that successfully addresses the challenge of identifying sarcastic expressions through explicit cross-modal incongruity modeling and emotion-aware processing.The Cross-Modal Incongruity Module effectively captures deliberate mismatches between textual and visual content, while the emotion-aware component enhances detection by analyzing emotional context patterns. Experimental validation on MEMOTION and MUStARD datasets demonstrates exceptional performance with AUC of 0.991 and calibration error of 0.0994, confirming reliable uncertainty quantification. The model achieves balanced performance with F1-scores exceeding 0.95 for non-sarcastic content and robust sarcastic classification above 0.6.The HCI-EASD framework establishes a significant contribution to multimodal learning, providing both superior performance and enhanced interpretability for real-world sarcasm detection applications in social media analysis and content moderation systems.
