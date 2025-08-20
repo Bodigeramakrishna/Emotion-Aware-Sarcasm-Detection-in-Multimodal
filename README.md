@@ -18,11 +18,13 @@ Sarcasm detection represents a complex natural language understanding task that 
 The experimental evaluation employs two prominent multimodal sarcasm detection datasets: MEMOTION and MUStARD, which collectively provide a comprehensive foundation for training and evaluating the HCI-EASD model.<br> 
 **MEMOTION Dataset:** The MEMOTION dataset contributes 5,000 samples to our training corpus, representing a substantial collection of meme-based sarcastic content.This dataset is particularly valuable because it captures the internet meme culture where sarcasm often manifests through deliberate incongruities between visual content and textual overlays.<br>
 **MUStARD Dataset:** The MUStARD dataset provides 3,000 samples with a more balanced distribution, containing 62.4% non-sarcastic and 37.6% sarcastic instances. This dataset originates from television show dialogues and captures a different form of sarcastic expression.<br>
+
 **Dataset Overview Analyses**
 <img width="1016" height="704" alt="image" src="https://github.com/user-attachments/assets/9d902507-1faa-4ee7-ad00-1014a5fd6156" />
+
 **Sarcasm Pattern Analyses**
 <img width="974" height="354" alt="image" src="https://github.com/user-attachments/assets/9c690f21-b571-48b0-8afc-0b847cf2de5e" />
-**Training Methodology**
+**Training Methodology**<br>
 The HCI-EASD model was implemented using the PyTorch deep learning framework, leveraging its dynamic computational graph capabilities for efficient multimodal processing. The model was trained on Kaggle's Tesla T4 GPU with 16GB memory, enabling efficient processing of multimodal batches while maintaining computational accessibility for reproducible research. The training environment utilized CUDA acceleration with automatic mixed precision training to optimize memory utilization and training speed. Batch sizes were dynamically adjusted based on sequence lengths and image resolutions to maximize GPU memory efficiency while ensuring stable gradient computation.
 # 4. Experimental Results and Analysis
 The HCI-EASD model demonstrates exceptional performance across all evaluation metrics, achieving robust classification accuracy that validates our architectural design Over all accuracy with 0.97 and F1 score as 0.97 illustrates model performing better in all directions.<br>
@@ -30,8 +32,10 @@ The Receiver Operating Characteristic (ROC) curve analysis provides compelling e
 **Classification Performance Metrics and ROC Analysis**<br>
 
 <img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/79cfb4c8-2344-4a20-b767-c02031776195" />
+
 **Cross-Modal Incongruity Analysis and Validation**<br>
 The incongruity score analysis provides critical validation of core hypothesis that sarcastic content exhibits measurable cross-modal discord.the Cross-Modal Incongruity Module successfully captures the deliberate mismatches characteristic of sarcastic communication. \<br>
+
 **Incongruity Score Analysis and Prediction Accuracy Distribution**
 <img width="975" height="314" alt="image" src="https://github.com/user-attachments/assets/e6a7da00-ad91-463b-8170-6acb6f527a86" />
 **Model Confidence Distribution for Sarcastic and Non-Sarcastic Classifications**
