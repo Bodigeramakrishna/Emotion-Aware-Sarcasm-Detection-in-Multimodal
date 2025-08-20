@@ -12,16 +12,22 @@ HCI-EASD (Hierarchical Cross-Modal Incongruity and Emotion-Aware Sarcasm Detecti
 •	Superior interpretable framework achieving 0.991 AUC with comprehensive token-level and feature visualization.<br>
 
 # 2. Methodlogy
-**Text to Text Transformer Model**:<br> 
-The implemented model is based on the T5 architecture, which operates in a unified framework by converting all NLP tasks into a text-to-text format. This specific implementation consists of three primary components: the embedding layer, the encoder stack, and the decoder stack. Each component plays a pivotal role in the overall functioning of the model.
-# 3.	Data Set
-The data set used for training the proposed model is collected from Twitter data set, and reddit data set. Totally the numbers of samples are 79813, distributed over 4 classes.  And it is observed that the class-wise distribution of the dataset used to train the proposed model.<br> 
-**Irony:** Representing the largest class, it contains 20,894 samples. These entries are primarily focused on capturing ironic statements, which are often characterized by a mismatch between literal and intended meaning.<br>
-**Sarcasm:** This class has 20,681 samples and targets sarcastic expressions, which include statements intended to mock or convey contempt, often using humor or exaggeration.<br>
-**Humor:** Comprising 19,643 samples, this class focuses on entries that are inherently humorous or light-hearted, capturing nuances that distinguish them from irony and sarcasm.<br>
-**Regular:** With 18,595 samples, this class includes statements that do not exhibit any of the characteristics of irony, sarcasm, or humor, serving as a baseline for normal textual data.<br>
-# 4.	Result Analysis
-The proposed model is trained for with a learning rate of 5*10^(-5) to ensure steady optimization, and a batch size of 16 for both training and evaluation to maintain computational efficiency. The model was trained for 5 epochs, with weight decay set to 0.01 to prevent over fitting. Training is conducted over 5 epochs, leveraging mixed-precision (fp16) to accelerate computations on GPUs. Logs are generated every 10 steps, and logging is directed to a designated directory for monitoring the training progress<br>
+**HCI-EASD model**:<br> 	
+Sarcasm detection represents a complex natural language understanding task that requires sophisticated modeling of linguistic nuances, contextual incongruities, and multimodal information. Given a multimodal input consisting of text T and image I, our objective is to learn a mapping function f:(T,I)→{0,1} that accurately classifies sarcastic content. The proposed HCI-EASD model addresses this challenge through a novel hierarchical architecture that explicitly models cross-modal incongruities and integrates emotion-aware features.
+# 3. Dataset Analysis and Preprocessing
+The experimental evaluation employs two prominent multimodal sarcasm detection datasets: MEMOTION and MUStARD, which collectively provide a comprehensive foundation for training and evaluating the HCI-EASD model.<br> 
+**MEMOTION Dataset:** The MEMOTION dataset contributes 5,000 samples to our training corpus, representing a substantial collection of meme-based sarcastic content.This dataset is particularly valuable because it captures the internet meme culture where sarcasm often manifests through deliberate incongruities between visual content and textual overlays.<br>
+**MUStARD Dataset:** The MUStARD dataset provides 3,000 samples with a more balanced distribution, containing 62.4% non-sarcastic and 37.6% sarcastic instances. This dataset originates from television show dialogues and captures a different form of sarcastic expression.<br>
+**Dataset Overview Analyses**
+<img width="1016" height="704" alt="image" src="https://github.com/user-attachments/assets/9d902507-1faa-4ee7-ad00-1014a5fd6156" />
+**Sarcasm Pattern Analyses**
+<img width="974" height="354" alt="image" src="https://github.com/user-attachments/assets/9c690f21-b571-48b0-8afc-0b847cf2de5e" />
+**Training Methodology**
+The HCI-EASD model was implemented using the PyTorch deep learning framework, leveraging its dynamic computational graph capabilities for efficient multimodal processing. The model was trained on Kaggle's Tesla T4 GPU with 16GB memory, enabling efficient processing of multimodal batches while maintaining computational accessibility for reproducible research. The training environment utilized CUDA acceleration with automatic mixed precision training to optimize memory utilization and training speed. Batch sizes were dynamically adjusted based on sequence lengths and image resolutions to maximize GPU memory efficiency while ensuring stable gradient computation.
+
+
+# 4. Experimental Results and Analysis
+The HCI-EASD model demonstrates exceptional performance across all evaluation metrics, achieving robust classification accuracy that validates our architectural design Over all accuracy with 0.97 and F1 score as 0.97 illustrates model performing better in all directions.<br>
 <img width="742" height="571" alt="image" src="https://github.com/user-attachments/assets/73e31c57-7aae-4511-bedb-2286b0c2b6ba" />
 
 <img width="788" height="611" alt="image" src="https://github.com/user-attachments/assets/300db5ae-750c-421f-95c9-099d519f6aac" />
