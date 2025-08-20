@@ -19,12 +19,12 @@ The experimental evaluation employs two prominent multimodal sarcasm detection d
 **MEMOTION Dataset:** The MEMOTION dataset contributes 5,000 samples to our training corpus, representing a substantial collection of meme-based sarcastic content.This dataset is particularly valuable because it captures the internet meme culture where sarcasm often manifests through deliberate incongruities between visual content and textual overlays.<br>
 **MUStARD Dataset:** The MUStARD dataset provides 3,000 samples with a more balanced distribution, containing 62.4% non-sarcastic and 37.6% sarcastic instances. This dataset originates from television show dialogues and captures a different form of sarcastic expression.<br>
 
-**Dataset Overview Analyses**
+**Dataset Overview Analyses**:
 <img width="1016" height="704" alt="image" src="https://github.com/user-attachments/assets/9d902507-1faa-4ee7-ad00-1014a5fd6156" />
 
-**Sarcasm Pattern Analyses**
+**Sarcasm Pattern Analyses**:
 <img width="974" height="354" alt="image" src="https://github.com/user-attachments/assets/9c690f21-b571-48b0-8afc-0b847cf2de5e" />
-**Training Methodology**<br>
+**Training Methodology**:<br>
 The HCI-EASD model was implemented using the PyTorch deep learning framework, leveraging its dynamic computational graph capabilities for efficient multimodal processing. The model was trained on Kaggle's Tesla T4 GPU with 16GB memory, enabling efficient processing of multimodal batches while maintaining computational accessibility for reproducible research. The training environment utilized CUDA acceleration with automatic mixed precision training to optimize memory utilization and training speed. Batch sizes were dynamically adjusted based on sequence lengths and image resolutions to maximize GPU memory efficiency while ensuring stable gradient computation.
 # 4. Experimental Results and Analysis
 The HCI-EASD model demonstrates exceptional performance across all evaluation metrics, achieving robust classification accuracy that validates our architectural design Over all accuracy with 0.97 and F1 score as 0.97 illustrates model performing better in all directions.<br>
