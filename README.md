@@ -49,32 +49,5 @@ The incongruity score analysis provides critical validation of core hypothesis t
 **Token-Level Importance Analysis for Sarcasm Prediction with Text Highlighting**<br>
 <img width="975" height="446" alt="image" src="https://github.com/user-attachments/assets/01fde011-3fdf-472d-841f-fd0ec591fd01" />
 
-
-
-
-
-
-
- 
-
-
-
-
-**Table 1**: Sarcasm detection comparison of proposed model performance with existing models
-
-| System                  | Model                                      | Data set                         | Accuracy | P      | R      | F1     |
-|-------------------------|--------------------------------------------|----------------------------------|----------|--------|--------|--------|
-| Wang et al. (2020)      | TextCNN with Lexicon Features              | Reddit Sarcasm                   | 88.7     | 87.2   | 88.1   | 87.7   |
-| Guo et al. (2021)       | Multi-View Learning with LSTM              | Weibo                            | 90.2     | 89.5   | 90.0   | 89.7   |
-| Liu et al. (2022)       | Bi-LSTM                                    | Twitter                          | 73       | 71.8   | 71.7   | 71.7   |
-| Yuan et al. (2022)      | Graph Convolutional Network (GCN)          | Social Media Data                | 87.9     | 86.7   | 87.3   | 87.0   |
-| Shaheen and Nigam (2022)| Sentiment-Aware Sarcasm Detection          | SemVal-2018                      | 82       | 82     | 77     | 79     |
-| Shekhawat et al. (2022) | Hybrid Model with SVM and CNN              | User-Generated Content           | 85.7     | 84.3   | 85.1   | 84.7   |
-| Liu et al. (2023)       | RoBERT                                     | IAC-V1, IAC-v2, twitter*         | 77.1     | 78.3   | 76.6   | 76.9   |
-| Li et al. (2021)        | Attention Mechanism with Bi-LSTM           | Multi-Platform Sarcasm Dataset   | 88.0     | 86.5   | 87.0   | 86.7   |
-| Eke et al. (2021)       | BERT with User Profiling                   | Twitter                          | 89.2     | 88.0   | 88.8   | 88.4   |
-| Potamias et al. (2020)  | Deep Learning with Lexical Features        | Reddit, SemVal-2018              | 85,89    | 78,81  | 78,80  | 78,80  |
-| Tomás et al. (2023)     | Generative Adversarial Networks (GANs)     | Mixed Media Dataset              | 90.5     | 89.8   | 90.0   | 89.9   |
-| **T5 (Text-to-Text Transfer Transformer) model**      | **Text to Text transfer Transformer model**| **Twitter(multi class) sarcasm** | **96**   | **93** | **88** | **91** |
 ## 5. Conclusion
 HCI-EASD, a novel hierarchical architecture for multimodal sarcasm detection that successfully addresses the challenge of identifying sarcastic expressions through explicit cross-modal incongruity modeling and emotion-aware processing.The Cross-Modal Incongruity Module effectively captures deliberate mismatches between textual and visual content, while the emotion-aware component enhances detection by analyzing emotional context patterns. Experimental validation on MEMOTION and MUStARD datasets demonstrates exceptional performance with AUC of 0.991 and calibration error of 0.0994, confirming reliable uncertainty quantification. The model achieves balanced performance with F1-scores exceeding 0.95 for non-sarcastic content and robust sarcastic classification above 0.6.The HCI-EASD framework establishes a significant contribution to multimodal learning, providing both superior performance and enhanced interpretability for real-world sarcasm detection applications in social media analysis and content moderation systems.
