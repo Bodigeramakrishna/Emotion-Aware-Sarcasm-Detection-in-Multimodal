@@ -18,6 +18,7 @@ Sarcasm detection represents a complex natural language understanding task that 
 The experimental evaluation employs two prominent multimodal sarcasm detection datasets: MEMOTION and MUStARD, which collectively provide a comprehensive foundation for training and evaluating the HCI-EASD model.<br> 
 **MEMOTION Dataset:** The MEMOTION dataset contributes 5,000 samples to our training corpus, representing a substantial collection of meme-based sarcastic content.This dataset is particularly valuable because it captures the internet meme culture where sarcasm often manifests through deliberate incongruities between visual content and textual overlays.<br>
 **MUStARD Dataset:** The MUStARD dataset provides 3,000 samples with a more balanced distribution, containing 62.4% non-sarcastic and 37.6% sarcastic instances. This dataset originates from television show dialogues and captures a different form of sarcastic expression.<br>
+**MMSD 2.0 dataset** MMSD 2.0 data set is perfectly balanced data with 19816 samples of image and text, and test data with 2409 samples, the main data that 19816 samples are divided in two parts for training and validation with 15852, and 3964. 
 
 **Dataset Overview Analyses**:
 <img width="1016" height="704" alt="image" src="https://github.com/user-attachments/assets/9d902507-1faa-4ee7-ad00-1014a5fd6156" />
