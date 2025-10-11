@@ -19,6 +19,8 @@ The experimental evaluation employs two prominent multimodal sarcasm detection d
 **MEMOTION Dataset:** The MEMOTION dataset contributes 5,000 samples to our training corpus, representing a substantial collection of meme-based sarcastic content.This dataset is particularly valuable because it captures the internet meme culture where sarcasm often manifests through deliberate incongruities between visual content and textual overlays.<br>
 **MUStARD Dataset:** The MUStARD dataset provides 3,000 samples with a more balanced distribution, containing 62.4% non-sarcastic and 37.6% sarcastic instances. This dataset originates from television show dialogues and captures a different form of sarcastic expression.<br>
 **MMSD 2.0 dataset** MMSD 2.0 data set is perfectly balanced data with 19816 samples of image and text, and test data with 2409 samples, the main data that 19816 samples are divided in two parts for training and validation with 15852, and 3964. 
+<
+
 
 **Dataset Overview Analyses**:
 <img width="1016" height="704" alt="image" src="https://github.com/user-attachments/assets/9d902507-1faa-4ee7-ad00-1014a5fd6156" />
@@ -30,6 +32,10 @@ The HCI-EASD model was implemented using the PyTorch deep learning framework, le
 # 4. Experimental Results and Analysis
 The HCI-EASD model demonstrates exceptional performance across all evaluation metrics, achieving robust classification accuracy that validates our architectural design Over all accuracy with 0.97 and F1 score as 0.97 illustrates model performing better in all directions.<br>
 The Receiver Operating Characteristic (ROC) curve analysis provides compelling evidence of the model's discriminative power, with an Area under the Curve (AUC) of 0.991. This exceptional AUC score indicates that the model can distinguish between sarcastic and non-sarcastic content with remarkable accuracy across all decision thresholds.<br>
+<img width="721" height="412" alt="image" src="https://github.com/user-attachments/assets/754022e9-e7e7-4d5c-a053-b9595d9982fd" /><br>
+<img width="1323" height="741" alt="image" src="https://github.com/user-attachments/assets/138d4036-5494-425d-bc36-76a22b10bb4b" />
+
+
 **Classification Performance Metrics and ROC Analysis**<br>
 
 <img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/79cfb4c8-2344-4a20-b767-c02031776195" />
