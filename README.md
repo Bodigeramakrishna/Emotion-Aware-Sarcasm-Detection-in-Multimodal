@@ -20,5 +20,4 @@
 **Token-Level Importance Analysis for Sarcasm Prediction with Text Highlighting**<br>
 <img width="975" height="446" alt="image" src="https://github.com/user-attachments/assets/01fde011-3fdf-472d-841f-fd0ec591fd01" />
 
-## 5. Conclusion
-and enhanced interpretability for real-world sarcasm detection applications in social media analysis and content moderation systems.
+
