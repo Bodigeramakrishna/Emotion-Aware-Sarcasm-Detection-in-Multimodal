@@ -1,4 +1,4 @@
-# Emotion-Aware-Sarcasm-Detection-in-Multimodal
+
 **Author**: Ramakrishna Bodige  
 **Email**: ramakrishnamail4u@gmail.com  
 **Institution**: Department of Computer Science, SR University, Warangal, Telangana, India
